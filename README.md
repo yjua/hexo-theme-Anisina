@@ -7,91 +7,13 @@
 <img src="./Screenshots/Anisina.png" />
 
 
-## Update Log
-
-### Anisina V3.3 (2018-11-07) 
-
-- Support Mathjax
-
-### Anisina V3.2 (2018-07-16) 
-
-- Support [Valine](https://valine.js.org/) comment system
-
-### Anisina V3.1 (2017-05-9)
-
-- Add Livere disqus (in your `_config.yml` add `use_livere: true` , and config you livere uid `livere_uid: hereIsYourLivereID`, here is Livere website <a href="https://livere.com/">go to livere </a>, and remember clear you another disqus system, like duoshuo.)
-
-### Anisina v3 (2016-09-4)
-
-- Fix Index Pages Http Security Tips
-- Add More Animation
-- Support Web Emoji , here is [use guide](http://haojen.github.io/2016/09/03/Emoji-Demo/) , is very simple.
-- Support Favicon , you can in `_config.yml` add `favicon: yourImagesPath.png`
-- Font Style Adjust
-- Post page Toc Adjust
-- Bug Fix
-
-### Anisina v2.01 （2016-08-07）
-
-- Support Double Click Navbar Scroll To Page Top
-- Support Swiftfy Search
-- Support Friends Links
-- Support Single Post Switch CDN Images ToTother Links
-- Support Safari & Chrome Color Header Bar
-- Support Preview Statistical
-- Bug Fix
-
-#### Adjust
-
-1. wechat title will auto use header images
-2. home post margin adjust
-3. home post title font style adjust
-4. avatar path use absolute url
-
-#### thanks
-
-thanks @刘晓婉 PR 
-thanks @HipHopCoderS PR :) and all users
-
-##### Known issues
-
-1. in wechat web view double click navbar can't scroll top ( cause wechat have doubleclick nav title return page top function )
+## 
 
 
-### Anisina v1.02 (2016-06-02)
-- bug fix
-- adjust post title text shadow
-- change header img path , now you can use `http://somepath.png`,or use hexo default `img`path: `img/demo.png`
-- adjust post subtitle font size
 
-## Summary
-	
-- [General](#general)
-- [Features](#features)
-- [install](#install)
-- [Quick start](#quick-start)
-- [About](#about)
-- [License](#license)
+## 介绍
 
-## General
-
-- **Author** : Haojen Ma
-- **Version** : 2.0
-- **Compatibility** : Hexo 3 or later
-
-## Features
-
-- Fully responsive
-- Support Qiniu images CDN 
-- Support Toc
-- Duoshuo
-- Disqus
-- Googe analytics
-- Baidu analytics
-- SEO
-- Immersive status bar
-- Search
-- Preivew Statistical
+本项目 fork 自，根据自己的爱好做了一些小小的修改。
 
 ### Install
 
@@ -100,8 +22,7 @@ thanks @HipHopCoderS PR :) and all users
 	First enter your hexo root folder, then execute the follwing commands
 
 		git clone https://github.com/Haojen/hexo-theme-Anisina.git themes/Anisina
-		
-
+	
 2. Modify ```_config.yml```file with your own info. look like this :
 
 		themes: Anisina
@@ -135,7 +56,7 @@ You can easily get stared by modifying ```config.yml```
 	clip-avatar: "?imageView2/2/w/300/h/300/interlace/1/q/90"
 	clip-post: "?" # you can custom post width and height
 	clip-home-post-bg: "?imageView2/1/w/800/h/300/interlace/1/q/70"
-
+	
 	#post default images
 	post-default-img: post-default.jpg
 	
@@ -150,7 +71,7 @@ You can easily get stared by modifying ```config.yml```
 			href: "your friend path 2"
 		}
 	] 
-	
+
 #### Create Tag page
 
 1. use hexo command `hexo new page "Tags"`
@@ -178,6 +99,7 @@ Support qiniu images cdn or you custom others, before use this, you need set you
 
 		 header-img: some-images.png
 	
+
 in browser,  img src or background-url  will be look like ```http://you-cdn.com/icon-wechat.png``` or ```http://you-cdn.com/header-img```, etc.
 	
 if you don't need cdn , the default path is hexo ```source/img```folder.
@@ -194,7 +116,7 @@ Google Analytics and Baidu Tongji simple config:
 
 	#Baidu Analytics**
 	ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
-
+	
 	#Google Analytics
 	ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
 	ga_domain: huangxuan.me
@@ -212,7 +134,7 @@ Second,  you can easily complete your comment configuration by just adding your 
 	duoshuo_username: _your_duoshuo_short_name_
 	# OR
 	disqus_username: _your_disqus_short_name_
-	
+
 Furthermore, Duoshuo support Sharing. if you only wanna use Duoshuo comment without sharing, you can set duoshuo_share: false. You can use Duoshuo Sharing and Disqus Comments together also.
 
 #### Featured Tags
@@ -263,19 +185,19 @@ The **front-matter** of a post looks like that:
 		- Movies
 		- Life
 	---
-	
+
 #### Create a post
-	
+
 	hexo new "your-post-name"
-	
+
 they will be create a new post in Hexo ```source/_posts``` folder
 
 if your like chinese poetry , you can try  ```poetry``` layout ,they will be cool
 
 	hexo new poetry 'your-poetry-name'
-	
+
  A poetry demo
- 
+
 ![poetry-demo](./Screenshots/poetry-show.png)
 
 #### Header-img
@@ -283,25 +205,18 @@ if your like chinese poetry , you can try  ```poetry``` layout ,they will be coo
 post header images.
 if you don't have set ,this will use post default header images.
 
-	
+
 #### cdn (V2.0 New Feature)
 
 use cdn tag switch single post cdn ,like this:
 
 	cdn: 'header-off' 
 	header-img: "http://www.imagestest.com/god.png"
-	
+
 this will turn off cdn , and use your custom url
 	
 when your share post to wechat moments , this post images will show here,
 if you don't have set ,this will use post header images(make sure you have set a default image )
-
-## About
-
-- Give is a Star if you like , fork or jest clone to use ,
-and also you can help me fix bugs and add new feature :)
-- if you have any problem or requirement , just open an issue here and i will help you.
-- thanks kaijun and hux.
 
 ## License
 Apache License Version 2.0
